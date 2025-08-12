@@ -18,8 +18,6 @@ export default function Meme() {
         meme1 = meme1[Math.floor(Math.random() * meme1.length)];
         meme1 = meme1.url;
         return meme1;
-        // console.log(results);
-        // return memeObj;
     }
 
     const [memeImage, setmemeImage] = useState({
@@ -34,11 +32,9 @@ export default function Meme() {
             ...prevState,
             [name]: value,
         }));
-        // console.log(meme);
     }
     function handleSubmit(event) {
         event.preventDefault();
-        // console.log(memeImage);
         setmemeImage((prevState) => ({
             ...prevState,
             image: getMemeImage(),
