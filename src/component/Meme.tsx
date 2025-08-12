@@ -38,10 +38,7 @@ export default function Meme(): JSX.Element {
   const [customImage, setCustomImage] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const memeRef = useRef<HTMLDivElement>(null);
-  // Debug: log when ref changes
-  React.useEffect(() => {
-    console.log('memeRef.current:', memeRef.current);
-  });
+ 
 
   // Array of text boxes that can be dragged
   const [textBoxes, setTextBoxes] = useState<TextBox[]>([
