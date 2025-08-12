@@ -241,16 +241,17 @@ export default function Meme(): JSX.Element {
   }
 
   return (
-    <main className="container mx-auto px-4 py-8 bg-gray-50 min-h-screen">
+    <main className="container mx-auto px-4 py-8 min-h-screen bg-gradient-to-br from-indigo-100 via-white to-blue-100 font-sans">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
-            Customize Your Meme
+        <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl p-8 mb-12 border border-gray-200">
+          <h2 className="text-4xl font-extrabold text-gray-900 mb-8 tracking-tight flex items-center gap-3">
+            <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow">Meme Generator</span>
+            <span className="text-base font-medium text-gray-400 ml-2">by <a href="https://github.com/bishnuf66" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-indigo-600 transition"><svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='currentColor' viewBox='0 0 24 24' className='inline'><path d='M12 .5C5.648.5.5 5.648.5 12c0 5.086 3.292 9.387 7.86 10.907.574.106.784-.25.784-.555 0-.274-.01-1.18-.015-2.14-3.197.695-3.874-1.54-3.874-1.54-.522-1.326-1.276-1.68-1.276-1.68-1.044-.714.08-.7.08-.7 1.155.082 1.763 1.187 1.763 1.187 1.026 1.76 2.693 1.252 3.35.958.104-.743.402-1.252.73-1.54-2.553-.29-5.238-1.277-5.238-5.687 0-1.256.448-2.283 1.184-3.088-.119-.29-.513-1.46.112-3.045 0 0 .966-.31 3.17 1.18.92-.256 1.91-.384 2.894-.388.983.004 1.974.132 2.895.388 2.202-1.49 3.166-1.18 3.166-1.18.627 1.585.233 2.755.114 3.045.738.805 1.183 1.832 1.183 3.088 0 4.42-2.689 5.393-5.252 5.678.413.355.78 1.057.78 2.132 0 1.54-.014 2.78-.014 3.16 0 .308.207.666.79.553C20.713 21.383 24 17.083 24 12c0-6.352-5.148-11.5-12-11.5z'/></svg> bishnuf66</a></span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Left side - Controls */}
-            <div>
+            <div className="bg-white/70 rounded-2xl shadow p-6 border border-gray-100">
               <div className="space-y-4">
                 {/* Text boxes controls */}
                 <div className="space-y-4">
